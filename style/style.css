@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.zako{
+  background-color: red;
+  padding: 50px 0;
+  opacity: 0.5;
+}
+.zako:hover img{
+  opacity: 2;
+}
+.zako img{
+  margin: 0 auto;
+  display: block;
+  /* opacity: 0.5; */
+}
+.n-zako{
+  height: 300px;
+  background-color: green;
+}
+.zako:hover + .n-zako {
+  background-color: red;
+ 
+}
+.zako:hover + .n-zako + .n2-zako{
+  background-color: yellow;
+}
+.n2-zako{
+  background-color: blue;
+  height: 300px;
+  
+}
+.zako:hover ~ div:not(.box){
+  background-color: yellow;
+}
+.box h3::before{
+  content: "This is";
+  color: darkred;
+}
+.box h3::after{
+  content: "end";
+  color: blueviolet;
+}
+.box h3::before{
+  content: "";
+  background-image: url("../img/photo_zako.jpg") ;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
